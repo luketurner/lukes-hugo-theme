@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+a { color: inherit; }
+a:visited { color: inherit; }
+
+h1, h2, h3, h4, h5, h6 { font-family: $heading-font; color: $subheader-fg; margin: ($line-height * 1.5) auto $line-height auto; }
+h1 { font-size: 2rem; line-height: $line-height * 2; color: $header-fg; }
+h2 { font-size: 1.8rem; line-height: $line-height * 1.8; }
+h3 { font-size: 1.6rem; line-height: $line-height * 1.6; }
+h4 { font-size: 1.4rem; line-height: $line-height * 1.4; margin: $line-height auto $line-height auto; }
+h5 { font-size: 1.2rem; line-height: $line-height * 1.2; margin: $line-height auto $line-height auto; }
+h6 { font-size: 1rem; line-height: $line-height * 1; margin: $line-height auto $line-height auto; }

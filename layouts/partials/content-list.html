@@ -1,0 +1,14 @@
+{{ $paginator := . }}
+<ul class="simple-list">
+  {{ range where $paginator.Pages "Kind" "page" }}
+    <li class="flex-row">
+      <div class="flex-col">
+        <div class="monospace color-grey-dark">[{{ .Date.Format "2006-01-02" }}]</div>
+      </div>
+      
+      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+    </li>
+  {{ end }}
+</ul>
+
+{{ partial "pager.html" . }}

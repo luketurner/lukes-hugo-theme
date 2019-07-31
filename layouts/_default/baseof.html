@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{- block "title" . }}{{ .Site.Title }}{{- end }}</title>
+    {{- block "head" . }}{{- end }}
+    {{ $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        {{- block "header" . }}
+          <div class="breadcrumbs">{{ partial "breadcrumbs.html" .Parent }}</div>
+          <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        {{- end }}
+      </header>
+      <main>
+        {{- block "main" . }}
+          {{ partial "content-tree.html" . }}
+        {{- end }}
+      </main>
+      <footer>
+        {{- block "footer" . }}
+          {{ partial "footer.html" . }}
+        {{- end }}
+      </footer>
+    </div>
+  </body>
+</html>

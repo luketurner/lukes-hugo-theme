@@ -1,0 +1,12 @@
+name = "lukes-hugo-theme"
+license = "MIT"
+licenselink = "https://github.com/luketurner/lukes-hugo-theme/blob/master/LICENSE"
+description = "Luke's Hugo Theme"
+homepage = "https://github.com/luketurner/lukes-hugo-theme"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Luke Turner"
+  homepage = "https://luketurner.org"

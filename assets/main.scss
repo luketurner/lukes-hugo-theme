@@ -1,0 +1,38 @@
+@import "variables.scss";
+@import "utility.scss";
+@import "typography.scss";
+@import "content.scss";
+
+// global styles
+
+* { box-sizing: border-box; }
+body { font: $base-font-size $body-font; background-color: $bg; }
+.container { max-width: 33rem; margin: auto; color: $fg; }
+
+footer { text-align: center; margin-top: 1rem; }
+
+// custom components
+
+// .content-tree h2 { font-size: 1.1rem; color: $grey-dark; text-decoration: underline; }
+.content-tree h5 { margin-bottom: 0; }
+.content-tree-subtitle { margin-left: 1.5rem; }
+
+.breadcrumbs a { color: $header-fg; }
+
+.age-0 { color: $fg; }
+.age-1 { color: $grey-darkest; }
+.age-2 { color: $grey-darker; }
+.age-3 { color: $grey-dark; }
+.age-0:hover, .age-1:hover, .age-2:hover, .age-3:hover, .age-4:hover { color: $fg; }
+
+.post-list {
+  @extend .plain-list;
+  li {
+    @extend .flex-row;
+    line-height: $line-height;
+    margin-bottom: $line-height;
+    span {
+      margin-right: 0.25rem;
+    }
+  }
+}

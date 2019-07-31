@@ -1,0 +1,42 @@
+
+// Variables and utility classes basically copied from tailwind.
+// Felt easier than figuring out an easy to use postcss pipeline with hugo.
+// https://tailwindcss.com/
+
+$black: #22292f;
+$grey-darkest: #3d4852;
+$grey-darker: #606f7b;
+$grey-dark: #8795a1;
+$grey: #b8c2cc;
+$grey-light: #dae1e7;
+$grey-lighter: #f1f5f8;
+$grey-lightest: #f8fafc;
+$white: #fff;
+$blue-darkest: #12283a;
+$blue-darker: #1c3d5a;
+$blue-dark: #2779bd;
+$blue: #3490dc;
+$blue-light: #6cb2eb;
+$blue-lighter: #bcdefa;
+$blue-lightest: #eff8ff;
+$red-darkest: #3b0d0c;
+$red-darker: #621b18;
+$red-dark: #cc1f1a;
+$red: #e3342f;
+$red-light: #ef5753;
+$red-lighter: #f9acaa;
+$red-lightest: #fcebea;
+$green-darkest: #0f2f21;
+$green-darker: #1a4731;
+$green-dark: #1f9d55;
+$green: #38c172;
+$green-light: #51d88a;
+$green-lighter: #a2f5bf;
+$green-lightest: #e3fcec;
+
+$code-bg-color: #f0f3f3; // Taken from pygments color scheme. Better way to load this dynamically?
+
+$fg: $black;
+$header-fg: $blue-dark;
+$subheader-fg: $blue;
+$bg: $grey-lightest;

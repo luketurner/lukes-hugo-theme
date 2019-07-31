@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+.page-content {
+  hr { margin: calc(#{$line-height} - 1px) 0; border-color: $grey; }
+
+  p, li { line-height: $line-height; margin-bottom: $line-height; }
+
+  pre { width: calc(100% + 2.8rem); overflow-x: auto; padding: $line-height; margin: $line-height (- $line-height) $line-height (- $line-height); background-color: $code-bg-color; }
+
+  th, td { padding: 0.25em; }
+
+  a { color: $grey-darker; }
+  a:visited { color: $grey-dark; }
+
+  code { background-color: $code-bg-color; padding: 1px; }
+}

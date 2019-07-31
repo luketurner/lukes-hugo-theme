@@ -1,0 +1,27 @@
+.plain-list { list-style: none; padding: 0; }
+.nested-list .nested-list { padding-left: 1rem; }
+
+.horizontal-list { display: flex; flex-flow: row nowrap; }
+
+.plain-link { text-decoration: none; color: inherit; }
+.plain-link:hover { color: inherit; }
+.plain-link:visited { color: inherit; }
+.subtle-link { color: $grey-dark; }
+
+.float-right { float: right; }
+.truncate { overflow-x: hidden; text-overflow: ellipsis; }
+.flex-row { display: flex; flex-flow: row nowrap; }
+.flex-col { display: flex; flex-flow: column nowrap; }
+.space-between { justify-content: space-between; }
+.space-around { justify-content: space-around; }
+.justify-end { justify-content: end; }
+.center { justify-content: center; }
+.w-75 { width: 75%; }
+
+.monospace { font-family: monospace; }
+.color-grey-dark { color: $grey-dark; }
+
+.m-b-lh { margin-bottom: $line-height; }
+.m-t-lh { margin-top: $line-height; }
+
+.line-height { line-height: $line-height; }

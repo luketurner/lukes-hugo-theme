@@ -1,0 +1,11 @@
+<div class="m-t-lh flex-row center">
+  <a href="{{ .Site.BaseURL }}">Home</a> &nbsp;-&nbsp;
+  <a href="{{ ref . .Site.Params.aboutPage }}">About</a> &nbsp;-&nbsp;
+  <a href="{{ ref . "/posts" }}">All Posts</a> &nbsp;-&nbsp;
+  <a href="{{ "/index.xml" | relURL }}">RSS</a> &nbsp;-&nbsp;
+  <a href="mailto:{{ .Site.Params.contactEmail }}">Contact</a> &nbsp;-&nbsp;
+  <a href="{{ .Site.Params.github }}">Github</a>
+</div>
+<div class="m-t-lh flex-row center">
+  <span>{{ .Site.Copyright }} </span>
+</div>
