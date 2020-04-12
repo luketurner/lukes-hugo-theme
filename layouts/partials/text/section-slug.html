@@ -1,1 +1,0 @@
-{{ $text := replaceRE "(?:.+[\\\\/])?([^\\\\/]+)[\\\\/]$" "$1" .Dir }}{{ if .IsHome }}{{ $text = .Title }}{{ end }}{{ $text }}

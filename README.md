@@ -1,6 +1,6 @@
 # Luke's Hugo Theme
 
-This is my Hugo theme for https://blog.luketurner.org/.
+This is my Hugo theme for https://luketurner.org/blog.
 
 Because I consider this a personal theme, it's published without any implication of maintenance or usability for anyone but myself. It has minimal configuration and only supports the features I want. If you wish to use this theme, I recommend forking and modifying it to fit your use case.
 
@@ -30,4 +30,4 @@ github = "https://github.com/luketurner"
 
 ```
 
-Copyright Luke Turner. Released under MIT License.
+Copyright 2020 Luke Turner. Released under MIT License.

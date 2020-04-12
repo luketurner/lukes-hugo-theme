@@ -5,19 +5,20 @@
     {{- block "head" . }}{{- end }}
     {{ $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+
   </head>
   <body>
     <div class="container">
       <header>
         {{- block "header" . }}
-          <div class="breadcrumbs">{{ partial "breadcrumbs.html" .Parent }}</div>
-          <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+          {{ partial "header.html" . }}
+          <div class="meta">
+            {{- block "meta" . }}{{- end }}
+          </div>
         {{- end }}
       </header>
       <main>
-        {{- block "main" . }}
-          {{ partial "content-tree.html" . }}
-        {{- end }}
+        {{- block "main" . }}{{- end }}
       </main>
       <footer>
         {{- block "footer" . }}

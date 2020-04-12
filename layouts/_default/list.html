@@ -1,4 +1,13 @@
+{{ define "meta" }}
+  {{ if not .IsHome }}
+  <p>
+    <a href="{{ ref . "/" }}">home</a>&nbsp;
+    <a href="{{ ref . "/tags" }}">all tags</a>
+  </p>
+  {{ end }}
+{{ end }}
+
 {{ define "main" }}
   <div class="page-content">{{ .Content }}</div>
-  {{ partial "content-tree.html" . }}
+  {{ partial "post-list.html" .Paginator }}
 {{ end }}

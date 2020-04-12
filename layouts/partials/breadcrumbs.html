@@ -1,7 +1,0 @@
-{{ with . }}
-  {{ with .Parent }}
-    {{ partial "breadcrumbs.html" . }}
-  {{ end }}
-  <a href="{{ .Permalink }}">{{ partial "text/section-slug.html" . }}</a> /
-{{ end }}
-  
