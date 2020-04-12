@@ -1,1 +1,1 @@
-{{ if eq .Draft true }}draft&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ else if .IsPage }}{{ .Date.Format "2006-01-02"  }}{{ end }}
+{{ if .Draft }}draft&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ else if .IsPage }}{{ .Date.Format "2006-01-02"  }}{{ end }}

@@ -1,6 +1,6 @@
 {{ $paginator := . }}
 
-<div class="flex-row space-around">
+<p>
   {{ if $paginator.HasPrev }} 
   <a href="{{ $paginator.Prev.URL }}" class="color-grey-dark">prev</a>
   {{ end }}
@@ -8,4 +8,4 @@
   {{ if $paginator.HasNext }} 
   <a href="{{ $paginator.Next.URL }}" class="color-grey-dark">next</a>
   {{ end }}
-</div>
+</p>
