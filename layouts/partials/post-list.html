@@ -1,0 +1,10 @@
+{{ $paginator := . }}
+<ul>
+  {{ range $paginator.Pages }}
+    <li>
+      {{ partial "text/post-date.html" . }} <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+    </li>
+  {{ end }}
+</ul>
+
+{{ partial "pager.html" . }}

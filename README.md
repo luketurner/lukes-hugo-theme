@@ -9,9 +9,10 @@ Because I consider this a personal theme, it's published without any implication
 This theme expects the following content:
 
 - `/content/_index.md` -- contains content for "Home" page, to be displayed above list of recent posts. Can be empty.
-- `/content/posts/_index.md` -- contains content for "All Posts" page, to be displayed above categorized list of all posts. Can be empty.
+- `/content/tags/_index.md` -- contains content for "All Tags" page. Can be empty.
+- `/content/posts/_index.md` -- contains content for "All Posts" page. Can be empty.
 
-All posts should go under `/content/posts`, using additional subdirectories to categorize posts. The directory structure underneath `/content/posts` can be arbitrarily complex, within reasonable limits.
+All posts should go under `/content/posts`, with no additional subdirectories. Posts should be organized using the =tag= taxonomy only.
 
 
 ## Configuration
