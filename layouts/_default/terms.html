@@ -1,0 +1,15 @@
+{{ define "meta" }}
+  <p>
+    <a href="{{ ref . "/" }}">home</a>&nbsp;
+    <a href="{{ ref . "/posts" }}">all posts</a>
+  </p>
+{{ end }}
+
+{{ define "main" }}
+  <div class="page-content">{{ .Content }}</div>
+  {{ range .Pages }}
+    <p>
+      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+    </p>
+  {{ end }}
+{{ end }}
