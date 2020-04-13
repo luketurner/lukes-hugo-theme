@@ -16,7 +16,7 @@ p,ul,ol,pre,table,blockquote{margin-top:0rem; margin-bottom:$glh;} ul ul,ol ol,u
 a,b,i,strong,em,small,code{line-height:0;} sub,sup{line-height:0; position:relative; vertical-align:baseline;} sup{top:-0.5em;} sub{bottom:-0.25em;}
 hr,.hr{border:1px solid;margin:-2px 0 $glh 0;} 
 
-$fb:"UM Typewriter",Garamond,serif; $fc:Georgia,serif;$fm:"UM Typewriter",monospace;
+$fb:"UM Typewriter",monospace; $fc:Georgia,serif;$fm:"UM Typewriter",monospace;
 $bg-color:#fdf6e3; $fg-color:#073642; $em-color:#586e75; //colors from https://ethanschoonover.com/solarized/
 html{font-family:$fb; background-color:$bg-color; color:$fg-color;} .page-content{font-family:$fc;} *{box-sizing:border-box;} a{color:inherit;}
 pre,code{font-family:$fm;} .highlight>pre{background-color:inherit !important;/*FIXME bg color disabled to "fix" solarized-light theme*/}
