@@ -1,10 +1,8 @@
 {{ define "meta" }}
-  {{ if not .IsHome }}
   <p>
     <a href="{{ ref . "/" }}">home</a>&nbsp;
     <a href="{{ ref . "/tags" }}">all tags</a>
   </p>
-  {{ end }}
 {{ end }}
 
 {{ define "main" }}
