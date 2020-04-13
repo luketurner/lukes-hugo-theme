@@ -1,10 +1,10 @@
 {{ $paginator := . }}
-<ul>
   {{ range $paginator.Pages }}
-    <li>
-      {{ partial "text/post-date.html" . }} <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-    </li>
+    <p>
+      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+      <br>
+      {{ partial "text/post-date.html" . }}&nbsp;{{- range (.GetTerms "tags") }} <a href="{{ .Permalink }}">+{{ .LinkTitle }}</a> {{- end }}
+    </p>
   {{ end }}
-</ul>
 
 {{ partial "pager.html" . }}
