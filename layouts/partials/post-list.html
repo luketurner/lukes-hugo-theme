@@ -1,10 +1,15 @@
 {{ $paginator := . }}
-  {{ range $paginator.Pages }}
-    <p>
+{{ range $paginator.Pages }}
+  <div>
+    <h3>
       <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-      <br>
-      {{ partial "text/post-date.html" . }}&nbsp;{{- range (.GetTerms "tags") }} <a href="{{ .Permalink }}">+{{ .LinkTitle }}</a> {{- end }}
+    </h3>
+    <p>
+      <span class="right">{{ partial "text/post-date.html" . }}</span>
+      {{- range (.GetTerms "tags") }} <a href="{{ .Permalink }}">+{{ .LinkTitle }}</a> {{- end }}
     </p>
-  {{ end }}
+    <p class="page-content">{{ .Summary }}</p>
+  </div>
+{{ end }}
 
 {{ partial "pager.html" . }}
