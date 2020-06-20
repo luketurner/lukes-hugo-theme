@@ -1,8 +1,10 @@
 # Luke's Hugo Theme
 
-This is my Hugo theme for https://luketurner.org/blog.
+This is my Hugo theme for https://blog.luketurner.org. 
 
 Because I consider this a personal theme, it's published without any implication of maintenance or usability for anyone but myself. It has minimal configuration and only supports the features I want. If you wish to use this theme, I recommend forking and modifying it to fit your use case.
+
+More information about the design goals for the theme are available here: https://blog.luketurner.org/posts/blog-theme/.
 
 ## Usage
 
