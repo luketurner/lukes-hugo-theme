@@ -24,8 +24,7 @@ pre,code{font-family:$fm;} .highlight>pre{background-color:inherit !important;/*
 .meta{margin-top:$glh; margin-bottom:$glh*2;} footer{margin-top:$glh*4;}
 .right{float:right;text-align:right;}
 .h0,h1,h2,h3,h4,h5,h6{font-family:$fb; a{text-decoration:none;}}
-figure{margin:$glh 0;img{max-width:100%;} &>a{display:block;} figcaption{background-color:$cbg2;padding:$glh;font-style: italic; :last-child{margin-bottom:0;}}}
-figure{margin:$glh 0;img{max-width:100%;} &>a{display:block;} figcaption{font-style: italic;}}
+figure{margin:$glh 0;img{max-width:100%;display:block;margin:auto;} &>a{display:block;} figcaption{background-color:$cbg2;padding:$glh;font-style: italic; :last-child{margin-bottom:0;}}}
 .note-block,.warning-block,.info-block{position:relative;margin:$glh 0;padding:$glh;background-color:$cbg2; *:last-child{margin-bottom:0;}
   &:before{font-family:$fb;font-weight:bold;margin-bottom:$glh;display:block;}}
 .note-block:before{content:"NOTE";}.warning-block:before{content:"WARNING";}.info-block:before{content:"INFO";}
