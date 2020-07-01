@@ -11,7 +11,7 @@ h2{font-size:2.625rem; line-height:$glh*2; margin-top:$glh; margin-bottom:$glh;}
 h3{font-size:1.625rem; line-height:$glh*2; margin-top:$glh; margin-bottom:0rem;}
 h4{font-size:1rem; line-height:$glh; margin-top:$glh; margin-bottom:0rem;}
 h5{font-size:1rem; line-height:$glh; margin-top:$glh; margin-bottom:0rem;}
-p,ul,ol,pre,table,blockquote{margin-top:0rem; margin-bottom:$glh;} ul ul,ol ol,ul ol,ol ul{margin-top:0rem; margin-bottom:0rem;}
+p,ul,ol,dl,pre,table,blockquote{margin-top:0rem; margin-bottom:$glh;} ul ul,ol ol,ul ol,ol ul,dl ol,dl ul,ol dl,ul dl{margin-top:0rem; margin-bottom:0rem;}
 a,b,i,strong,em,small,code{line-height:0;} sub,sup{line-height:0; position:relative; vertical-align:baseline;} sup{top:-0.5em;} sub{bottom:-0.25em;}
 hr,.hr{border:1px solid;margin:-2px 0 $glh 0;} 
 
@@ -28,5 +28,6 @@ figure{margin:$glh 0;img{max-width:100%;display:block;margin:auto;} &>a{display:
 .note-block,.warning-block,.info-block{position:relative;margin:$glh 0;padding:$glh;background-color:$cbg2; *:last-child{margin-bottom:0;}
   &:before{font-family:$fb;font-weight:bold;margin-bottom:$glh;display:block;}}
 .note-block:before{content:"NOTE";}.warning-block:before{content:"WARNING";}.info-block:before{content:"INFO";}
+table{border-collapse:collapse;} th,td{padding:0 $glh $glh 0;vertical-align:top;} tr:last-child th, tr:last-child td{padding-bottom:0;}
 @media screen and (max-width: $gfs*$gwf) {.container{max-width:100%;}}
-@media screen and (min-width: $gfs*($gwf+9)) {pre{margin-left:-$gfs*4;margin-right:-$gfs*4;max-width:$gfs*($gwf+8)}}
+@media screen and (min-width: $gfs*($gwf+9)) {pre,table{margin-left:-$gfs*4;margin-right:-$gfs*4;max-width:$gfs*($gwf+8)}}
