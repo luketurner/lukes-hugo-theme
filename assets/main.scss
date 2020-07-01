@@ -28,7 +28,7 @@ figure{margin:$glh 0;img{max-width:100%;display:block;margin:auto;} &>a{display:
 .note-block,.warning-block,.info-block{position:relative;margin:$glh 0;padding:$glh;background-color:$cbg2; *:last-child{margin-bottom:0;}
   &:before{font-family:$fb;font-weight:bold;margin-bottom:$glh;display:block;}}
 .note-block:before{content:"NOTE";}.warning-block:before{content:"WARNING";}.info-block:before{content:"INFO";}
-table{border-collapse:collapse;} th,td{padding:0 $glh $glh 0;vertical-align:top;} tr:last-child th, tr:last-child td{padding-bottom:0;}
+table{border-collapse:collapse;} th,td{padding:0 $glh $glh 0;vertical-align:top;text-align:left;} tr:last-child td{padding-bottom:0;}
 
 @media screen and (max-width: $gfs*$gwf) {.container{max-width:100%;}}
 @media screen and (min-width: $gfs*($gwf+9)) {pre,table{margin-left:-$gfs*4;margin-right:-$gfs*4;max-width:$gfs*($gwf+8)}}
