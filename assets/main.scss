@@ -1,6 +1,10 @@
 @font-face {src:url("fonts/UMTypewriter-Regular.otf"); font-family:"UM Typewriter";}
 @font-face {src:url("fonts/UMTypewriter-Bold.otf"); font-family:"UM Typewriter"; font-weight:bold;}
 @font-face {src:url("fonts/OverpassMono-Light.ttf"); font-family:"Overpass Mono";}
+@font-face {src:url("fonts/PTSerif-Regular.ttf"); font-family:"PT Serif";}
+@font-face {src:url("fonts/PTSerif-Bold.ttf"); font-family:"PT Serif"; font-weight:bold;}
+@font-face {src:url("fonts/PTSerif-Italic.ttf"); font-family:"PT Serif"; font-style:italic;}
+@font-face {src:url("fonts/PTSerif-BoldItalic.ttf"); font-family:"PT Serif"; font-weight:bold; font-style:italic;}
 
 // typography system
 // adapted from gridlover 16 / 1.4 / 1.618
@@ -17,7 +21,7 @@ hr,.hr{border:1px solid;margin:-2px 0 $glh 0;}
 
 // general styles
 // colors from https://ethanschoonover.com/solarized/
-$fb:"UM Typewriter",monospace; $fc:Georgia,serif;$fm:"Overpass Mono",monospace;
+$fb:"UM Typewriter",monospace; $fc:"PT Serif",Georgia,serif;$fm:"Overpass Mono",monospace;
 $cbg:#fdf6e3/*color-bg*/; $cbg2:#eee8d5/*color-bg-alt*/; $cfg:#073642/*color-fg*/; $cem:#586e75/*color-em*/;
 html{font-family:$fb; background-color:$cbg; color:$cfg;} .page-content{font-family:$fc;} *{box-sizing:border-box;} a{color:inherit;}
 pre,code{font-family:$fm;} pre{max-width:100%;overflow-x:auto;} .highlight>pre{background-color:inherit !important;/*disable syntax highlighter bg color*/}
