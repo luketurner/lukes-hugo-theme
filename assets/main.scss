@@ -1,5 +1,3 @@
-@font-face {src:url("fonts/OverpassMono-Light.ttf"); font-family:"Overpass Mono";}
-
 // typography system
 // adapted from gridlover 16 / 1.4 / 1.5
 $gfs:16px/*grid-font-size*/; $glh:1.375rem/*grid-line-height*/; $gwf:35/*grid-width-factor*/;
@@ -15,10 +13,10 @@ hr,.hr{border:1px solid;margin:-2px 0 $glh 0;}
 
 // general styles
 // colors from https://ethanschoonover.com/solarized/
-$fb:Georgia,serif; $fc:Georgia,serif;$fm:"Overpass Mono",monospace;
+$fb:Georgia,serif; $fc:Georgia,serif;$fm:SFMono-Regular,Consolas,"Liberation Mono",Menlo,monospace;
 $cbg:#fdf6e3/*color-bg*/; $cbg2:#eee8d5/*color-bg-alt*/; $cfg:#073642/*color-fg*/; $cem:#586e75/*color-em*/;
 html{font-family:$fb; background-color:$cbg; color:$cfg;} .page-content{font-family:$fc;} *{box-sizing:border-box;} a{color:inherit;}
-pre,code{font-family:$fm;} pre{max-width:100%;overflow-x:auto;} .highlight>pre{background-color:inherit !important;/*disable syntax highlighter bg color*/}
+pre,code{font:14px $fm;line-height:1.4;} pre{max-width:100%;overflow-x:auto;} .highlight>pre{background-color:inherit !important;/*disable syntax highlighter bg color*/}
 .meta{margin-top:$glh; margin-bottom:$glh*2;} footer{margin-top:$glh*4;}
 .right{float:right;text-align:right;}
 .h0,h1,h2,h3,h4,h5,h6{font-family:$fb; a{text-decoration:none;}}
