@@ -9,7 +9,7 @@
   <div class="page-content">{{ .Content }}</div>
   {{ range .Pages }}
     <p>
-      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+      <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
     </p>
   {{ end }}
 {{ end }}

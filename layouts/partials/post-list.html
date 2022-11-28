@@ -6,7 +6,7 @@
     </h3>
     <p>
       <span class="right">{{ partial "text/post-date.html" . }}</span>
-      {{- range (.GetTerms "tags") }} <a href="{{ .Permalink }}">+{{ .LinkTitle }}</a> {{- end }}
+      {{- range (.GetTerms "tags") }} <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a> {{- end }}
     </p>
     <p class="page-content">{{ .Summary }}</p>
   </div>

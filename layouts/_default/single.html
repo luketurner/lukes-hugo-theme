@@ -4,15 +4,14 @@
   <p>
     <span class="right">
       {{ .Params.author }}
-      <br>
+      <br>&nbsp;<br>
       <span title="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</span>
     </span>
+    {{- range (.GetTerms "tags") }} <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a> {{- end }}
+    <br>&nbsp;<br>
+    <a href="{{ ref . "/posts" }}">all posts</a>
+    <a href="{{ ref . "/tags" }}">all tags</a>
     <a href="{{ ref . "/" }}">home</a>
-    <br>
-    &nbsp;
-    <br>
-    <a href="{{ ref . "/posts" }}">+post</a>
-    {{- range (.GetTerms "tags") }} <a href="{{ .Permalink }}">+{{ .LinkTitle }}</a> {{- end }}
   </p>
 {{ end }}
 
