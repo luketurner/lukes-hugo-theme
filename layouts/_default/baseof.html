@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ (resources.Get "katex.min.css").Permalink }}">
     <script defer src="{{ (resources.Get "katex.min.js").Permalink }}"></script>
     <script defer src="{{ (resources.Get "auto-render.min.js").Permalink }}" onload="renderMathInElement(document.body);"></script>
+    <script defer src="{{ (resources.Get "mermaid.min.js").Permalink }}" onload="mermaid.initialize({ startOnLoad: true });"></script>
   </head>
   <body>
     <div class="container">
