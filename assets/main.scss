@@ -11,21 +11,30 @@ p,ul,ol,dl,pre,table,blockquote{margin-top:0rem; margin-bottom:$glh;} ul ul,ol o
 a,b,i,strong,em,small,code{line-height:0;} sub,sup{line-height:0; position:relative; vertical-align:baseline;} sup{top:-0.5em;} sub{bottom:-0.25em;}
 hr,.hr{border:1px solid;margin:-2px 0 $glh 0;} 
 
-// general styles
 // colors from https://ethanschoonover.com/solarized/
+// Note I don't follow the recommendations for fg/bg exactly, preferring a higher contrast selection
+$base03:#002b36; $base02:#073642; $base01:#586e75; $base00:#657b83;$base0:#839496;$base1:#93a1a1;$base2:#eee8d5;$base3:#fdf6e3;
+
+// general styles
 $fb:Georgia,serif; $fc:Georgia,serif;$fm:SFMono-Regular,Consolas,"Liberation Mono",Menlo,monospace;
-$cbg:#fdf6e3/*color-bg*/; $cbg2:#eee8d5/*color-bg-alt*/; $cfg:#073642/*color-fg*/; $cem:#586e75/*color-em*/;
-html{font-family:$fb; background-color:$cbg; color:$cfg;} .page-content{font-family:$fc;} *{box-sizing:border-box;} a{color:inherit;}
+$bg:$base3/*color-bg*/; $bg2:$base2/*color-bg-alt*/; $fg:$base02/*color-fg*/; $fg2:$base01/*color-em*/;
+html{font-family:$fb; background-color:$bg; color:$fg;} .page-content{font-family:$fc;} *{box-sizing:border-box;} a{color:inherit;}
 pre,code{font:16px $fm;line-height:1.4;} pre{max-width:100%;overflow-x:auto;} .highlight>pre{background-color:inherit !important;/*disable syntax highlighter bg color*/}
 code{font-weight: bold;} pre code{font-weight: inherit;}
 .meta{margin-top:$glh; margin-bottom:$glh*2;} footer{margin-top:$glh*4;}
 .right{float:right;text-align:right;}
 .h0,h1,h2,h3,h4,h5,h6{font-family:$fb; a{text-decoration:none;}}
-figure{margin:$glh 0;img{max-width:100%;display:block;margin:auto;} &>a{display:block;} figcaption{background-color:$cbg2;padding:$glh;font-style: italic; :last-child{margin-bottom:0;}}}
-.NOTE,.WARNING,.INFO{position:relative;margin:$glh 0;padding:$glh;background-color:$cbg2; &>*:last-child{margin-bottom:0; pre{margin-bottom:0;}}
+figure{margin:$glh 0;img{max-width:100%;display:block;margin:auto;} &>a{display:block;} figcaption{background-color:$bg2;padding:$glh;font-style: italic; :last-child{margin-bottom:0;}}}
+.NOTE,.WARNING,.INFO{position:relative;margin:$glh 0;padding:$glh;background-color:$bg2; &>*:last-child{margin-bottom:0; pre{margin-bottom:0;}}
   &:before{font-family:$fb;font-weight:bold;margin-bottom:$glh;display:block;}}
 .NOTE:before{content:"NOTE";}.WARNING:before{content:"WARNING";}.INFO:before{content:"INFO";}
 table{border-collapse:collapse;} th,td{padding:0 $glh $glh 0;vertical-align:top;text-align:left;} tr:last-child td{padding-bottom:0;}
 .underline{text-decoration:underline;}
 @media screen and (max-width: $gfs*$gwf) {.container{max-width:100%;}}
 @media screen and (min-width: $gfs*($gwf+9)) {.widen>*{margin-left:-$gfs*4;margin-right:-$gfs*4;max-width:$gfs*($gwf+8)}}
+
+.darkmode {
+  $bg:$base03; $bg2:$base02; $fg:$base1; $fg2:$base1;
+  background-color:$bg; color:$fg;
+  figcaption,.NOTE,.WARNING,.INFO{background-color:$bg2;}
+}

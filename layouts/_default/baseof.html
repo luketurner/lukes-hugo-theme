@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+{{ if .Site.Params.darkMode }}
+<html class="darkmode">
+{{ else }}
 <html>
+{{ end }}
   <head>
     <title>{{- block "title" . }}{{ .Site.Title }}{{- end }}</title>
     {{- block "head" . }}{{- end }}
