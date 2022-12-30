@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 {{ if .Site.Params.darkMode }}
-<html class="darkmode">
+<html lang="en" class="darkmode">
 {{ else }}
-<html>
+<html lang="en">
 {{ end }}
   <head>
+    <meta charset="utf-8">
     <title>{{- block "title" . }}{{ .Site.Title }}{{- end }}</title>
     {{- block "head" . }}{{- end }}
     <meta name="viewport" content="width=device-width">
